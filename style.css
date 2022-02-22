@@ -1,0 +1,423 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+font-family: 'Roboto', sans-serif;
+}
+
+
+/******************************************
+/* HEADER
+/*******************************************/
+header {
+  width: 100%;
+  height: 55px;
+  background: black;
+  margin-top: -10px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  height: 55px;
+}
+ul {
+  list-style: none
+}
+ul li {
+  width: 80px;
+  height: 55px;
+  float: left;
+  border-right: 1px solid #666666;
+  padding-top: 20px;
+}
+ul a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+
+}
+.bbc {
+  display: block;
+  width: 120px;
+  padding: 15px 10px 0 0;
+}
+.bbc-logo-pic {
+  width: 100%;
+}
+.signin {
+  width: 150px;
+  padding-right: 80px;
+}
+.user-icon {
+  display: block;
+  width: 20px;
+  border: none;
+}
+.user-icon-pic {
+  width: 90%;
+  margin-left: 10px;
+}
+.more {
+  width: 100px;
+  border: none;
+  padding-right: 40px;
+}
+.white-arrow {
+  width: 20px;
+}
+.white-arrow-pic {
+  width: 40%;
+  margin-bottom: 2px;
+}
+.search {
+  width: 150px;
+  border: none;
+  position: relative;
+  padding: 15px 0 0 10px;
+}
+::placeholder {
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+}
+.search-icon-pic {
+  position: absolute;
+  width: 12%;
+  top: 5%;
+  left: 160px;
+  padding-top: 15px;
+}
+/******************************************
+/*MAIN-HEADING
+/*******************************************/
+.welcome, .middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcome-bbc, .middle-news {
+  font-size: 26px;
+  font-weight: 700;
+  color: #4A4A4A;
+  padding-top: 35px;
+}
+.date {
+  font-size: 26px;
+  font-weight: 400;
+  color: #8C8C8C;
+  padding-top: 35px;
+}
+
+
+/******************************************
+/*MAIN
+/*******************************************/
+.main, .bottom {
+  width: 58%;
+  height: 400px;
+  margin: auto;
+}
+.main-left, .main-right {
+  width: 50%;
+  height: 400px;
+  float: left;
+}
+.main-right-upper-left, .main-right-upper-right, .main-right-lower-left, .main-right-lower-right {
+  width: 50%;
+  height: 200px;
+  float: left;
+}
+/* --------------------MAIN-LEFT------------------- */
+.main-left, .main-right-upper-left, .main-right-upper-right, .main-right-lower-left, .main-right-lower-right {
+  position: relative;
+}
+.israel {
+  width: 98%;
+  height: 400px;
+}
+h1 {
+  position: absolute;
+  top: 54%;
+  left: 15px;
+  color: white;
+  font-size: 33px;
+  font-weight: 400;
+}
+.israel-paragraph {
+  position: absolute;
+  top: 70%;
+  left: 15px;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+}
+.middle-east {
+  position: absolute;
+  top: 88%;
+  left: 25px;
+  color: #CFCFCF;
+  font-size: 15px;
+  font-weight: 400;
+}
+.bar-ME {
+  position: absolute;
+  top: 88%;
+  left: 15px;
+  color: red;
+  font-size: 14px;
+  font-weight: 700;
+}
+/* -----------------MAIN-RIGHT--------------  */
+
+/* ----------MAIN-RIGHT-UPPER-LEFT------------  */
+.canada-pic {
+  width: 98%;
+  height: 190px;
+}
+.americans {
+  position: absolute;
+  top: 44%;
+  left: 15px;
+  color: white;
+  font-size: 21px;
+  font-weight: 400;
+}
+.canada {
+  position: absolute;
+  top: 83%;
+  left: 25px;
+  color: #CFCFCF;
+  font-size: 15px;
+  font-weight: 400;
+}
+.bar-canada {
+  position: absolute;
+  top: 83%;
+  left: 15px;
+  color: #4CB0EE;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+/* ----------MAIN-RIGHT-UPPER-RIGHT------------  */
+.vaccine-pic {
+  width: 98%;
+  height: 190px;
+  margin-left: 8px;
+}
+.vaccinate {
+  position: absolute;
+  top: 44%;
+  left: 20px;
+  color: white;
+  font-size: 21px;
+  font-weight: 400;
+}
+.health {
+  position: absolute;
+  top: 83%;
+  left: 30px;
+  color: #CFCFCF;
+  font-size: 15px;
+  font-weight: 400;
+}
+.bar-health {
+  position: absolute;
+  top: 83%;
+  left: 20px;
+  color: red;
+  font-size: 14px;
+  font-weight: 900;
+}
+/* ----------MAIN-RIGHT-LOWER-LEFT------------  */
+.headphones {
+  width: 98%;
+  height: 190px;
+  margin-top: 8px;
+}
+.gyms {
+  position: absolute;
+  top: 56%;
+  left: 15px;
+  color: white;
+  font-size: 21px;
+  font-weight: 400;
+}
+.worklife {
+  position: absolute;
+  top: 85%;
+  left: 25px;
+  color: #CFCFCF;
+  font-size: 15px;
+  font-weight: 400;
+}
+.bar-worklife {
+  position: absolute;
+  top: 85%;
+  left: 15px;
+  color: #4CB0EE;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+/* ----------MAIN-RIGHT-LOWER-LEFT------------  */
+.jara {
+  width: 98%;
+  height: 190px;
+  margin: 8px 0 0 8px;
+}
+.folk-singer {
+  position: absolute;
+  top: 44%;
+  left: 20px;
+  color: white;
+  font-size: 21px;
+  font-weight: 400;
+}
+.culture {
+  position: absolute;
+  top: 85%;
+  left: 30px;
+  color: #CFCFCF;
+  font-size: 15px;
+  font-weight: 400;
+}
+.bar-culture {
+  position: absolute;
+  top: 85%;
+  left: 20px;
+  color: #3B3272;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+/******************************************
+/*MIDDLE
+/*******************************************/
+.welcome, .middle {
+  width: 58%;
+  height: 100px;
+  margin: auto;
+}
+.bar-news {
+  color: red;
+  font-weight: 900;
+  padding-right: 6px;
+}
+
+/******************************************
+/*BOTTOM
+/*******************************************/
+.bottom-left, .bottom-middle, .bottom-right {
+  width: 33.3333%;
+  height: 400px;
+  float: left;
+}
+
+/* BOTTOM-LEFT  */
+.bh-pic {
+  width: 98%;
+}
+.bh-headline {
+  font-size: 21px;
+  font-weight: 900;
+  margin-top: 5px;
+}
+.bh-paragraph {
+  font-size: 17px;
+  font-weight: 500;
+  color: #505050;
+  margin: -8px 0 8px 0;
+}
+.us-2020 {
+  color: #9E9E9E;
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 6px;
+}
+.bar-us-election {
+  color: red;
+  font-weight: 900;
+}
+
+/* BOTTOM-MIDDLE  */
+.solidarity-pic {
+  width: 98%;
+  margin-left: 4px;
+}
+.solidarity-headline {
+  font-size: 21px;
+  font-weight: 900;
+  margin: 5px 0 0 4px;
+}
+.solidarity-paragraph {
+  font-size: 17px;
+  font-weight: 500;
+  color: #505050;
+  margin: 12px 0 25px 4px;
+}
+.europe {
+  color: #9E9E9E;
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 6px;
+}
+.bar-europe {
+  color: red;
+  font-weight: 900;
+  margin: 10px 0 0 4px;
+}
+
+/* BOTTOM-RIGHT  */
+.trump-pic {
+  width: 98%;
+  margin-left: 8px;
+}
+.trump-headline {
+  font-size: 21px;
+  font-weight: 900;
+  margin: 5px 0 0 8px;
+}
+.trump-paragraph {
+  font-size: 17px;
+  font-weight: 500;
+  color: #505050;
+  margin: 12px 0 25px 8px;
+}
+.us-canada {
+  color: #9E9E9E;
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 6px;
+}
+.bar-us-canada {
+  color: red;
+  font-weight: 900;
+  margin: 10px 0 0 8px;
+}
